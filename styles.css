@@ -1,0 +1,43 @@
+  .about-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-form-card {
+    padding: 28px 20px;
+  }
+  .about-card.story-card {
+    padding: 32px 24px;
+  }
+  .hero-section,
+  .about-section,
+  .features-section,
+  .contact-section {
+    padding: 70px 0;
+  }
+}
+/* Small Mobile Screens */
+@media (max-width: 480px) {
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-actions .btn {
+    width: 100%;
+  }
+  .terminal-card {
+    border-radius: var(--radius-md);
+  }
+  .log-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Accessibility: Respect Reduced Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
